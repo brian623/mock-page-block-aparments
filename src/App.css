@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -34,5 +33,41 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  background-image: url('./media/bgBody.webp');
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-position: center; /* Centra la imagen */
+  background-repeat: repeat;
+  height: 100vh; /* Asegúrate de que el cuerpo ocupe toda la altura de la ventana */
+  margin: 0; /* Elimina el margen predeterminado */
+  overflow: scroll; /* Evita el desplazamiento del body */
+  background-attachment: scroll;
+}
+.main-content {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel {
+  padding: 0 10px;
+}
+.carousel-control-next {
+  right: -40px;
+}
+.carousel-control-prev {
+  left: -40px
+}
+.carousel-control-next , .carousel-control-prev {
+  width: 5%;
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-control-next {
+    right: 0;
+  }
+  .carousel-control-prev {
+    left: 0;
   }
 }
