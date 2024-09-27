@@ -1,13 +1,13 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Cambiado a HashRouter
 import NavigationBar from './components/Navbar';
 import Home from './components/Home';
 import NewsDetail from './pages/NewsDetail';
 import ZonesDetail from './pages/ZonesDetail';
 import MeetingDetail from './pages/MeetingDetail';
-import NewsPage from './pages/NewsPage'; // Importa la nueva página
-import ZonesPage from './pages/ZonesPage'; // Importa la nueva página
+import NewsPage from './pages/NewsPage';
+import ZonesPage from './pages/ZonesPage';
 import './App.css';
 
 const App = () => {
@@ -16,12 +16,12 @@ const App = () => {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/news" element={<NewsPage />} /> {/* Ruta para todas las noticias */}
-        <Route path="/news/:id" element={<NewsDetail />} /> {/* Ruta para detalles de noticias */}
-        <Route path="/zones" element={<ZonesPage />} /> {/* Ruta para todas las zonas */}
-        <Route path="/zones/:id" element={<ZonesDetail />} /> {/* Ruta para detalles de zonas */}
+        <Route path="/news" element={<NewsPage />} />
+        <Route path="/news/:id" element={<NewsDetail />} />
+        <Route path="/zones" element={<ZonesPage />} />
+        <Route path="/zones/:id" element={<ZonesDetail />} />
         <Route path="/meeting" element={<MeetingDetail />} />
-        <Route path="*" element={<NotFound />} /> {/* Ruta para páginas no encontradas */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
