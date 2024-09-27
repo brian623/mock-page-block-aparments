@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mock-page-block-aparments/static/css/main.d619748a.css",
+    "main.js": "/mock-page-block-aparments/static/js/main.64574571.js",
+    "static/media/bgBody.webp": "/mock-page-block-aparments/static/media/bgBody.d031a8acf45ee44f65c7.webp",
+    "index.html": "/mock-page-block-aparments/index.html",
+    "main.d619748a.css.map": "/mock-page-block-aparments/static/css/main.d619748a.css.map",
+    "main.64574571.js.map": "/mock-page-block-aparments/static/js/main.64574571.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d619748a.css",
+    "static/js/main.64574571.js"
+  ]
+}
